@@ -2382,15 +2382,86 @@ a {
   }
 }
 
-/* —— Mobile polish —— */
+.mobile-dock {
+  display: none;
+}
+
+/* —— Mobile comfort (layout only, same design language) —— */
 @media (max-width: 720px) {
   .shell {
     width: min(1120px, calc(100% - 1.5rem));
   }
 
+  #about,
+  #houses,
+  #spa,
+  #events,
+  #kitchen,
+  #prices,
+  #calc,
+  #contacts {
+    scroll-margin-top: 5.5rem;
+  }
+
   .site-header {
     backdrop-filter: none;
     background: var(--cream);
+  }
+
+  .hero__grid {
+    gap: 1.15rem;
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .hero__copy .lead--story {
+    max-width: none;
+  }
+
+  .hero__actions {
+    position: sticky;
+    bottom: 4.75rem;
+    z-index: 5;
+  }
+
+  .house-card__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .spa-card__media {
+    gap: 0.65rem;
+  }
+
+  .mobile-dock {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 0.55rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    padding: 0.65rem 0.85rem max(0.65rem, env(safe-area-inset-bottom));
+    background: rgba(253, 248, 240, 0.96);
+    border-top: 1px solid rgba(107, 83, 68, 0.12);
+    box-shadow: 0 -10px 28px rgba(74, 60, 50, 0.08);
+  }
+
+  .mobile-dock .btn {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding-bottom: 4.75rem;
+  }
+
+  body.nav-open .mobile-dock {
+    display: none;
   }
 
   .header__inner {
