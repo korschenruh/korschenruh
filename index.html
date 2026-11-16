@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=yes" />
+  <meta name="theme-color" content="#fdf8f0" />
   <meta name="description" content="Korschenruh — усадьба у залива: два дома, баня на дровах, сибирский банный чан и тёплый бассейн." />
   <link rel="canonical" href="https://korschenruh.ru/" />
   <title>Korschenruh — усадьба с баней и чаном у залива</title>
@@ -74,6 +75,7 @@
               width="900"
               height="900"
               loading="eager"
+              decoding="async"
               fetchpriority="high"
             />
           </div>
@@ -128,7 +130,7 @@
           <article class="house-card">
             <div class="house-card__media">
               <span class="house-card__badge">до 24 гостей</span>
-              <img src="images/big-house-1.png" alt="Большой дом с камином — фасад с красной крышей за воротами" loading="lazy" />
+              <img src="images/big-house-1.png" alt="Большой дом с камином — фасад с красной крышей за воротами" loading="lazy" decoding="async" />
             </div>
             <div class="house-card__body">
               <h3>Большой дом с камином</h3>
@@ -147,7 +149,7 @@
           <article class="house-card">
             <div class="house-card__media">
               <span class="house-card__badge house-card__badge--alt">до 8 гостей</span>
-              <img src="images/forest-house-1.png" alt="Лесной дом с баней — гостиная с диванами и камином" loading="lazy" />
+              <img src="images/forest-house-1.png" alt="Лесной дом с баней — гостиная с диванами и камином" loading="lazy" decoding="async" />
             </div>
             <div class="house-card__body">
               <h3>Лесной дом с баней</h3>
@@ -193,17 +195,23 @@
 
           <div class="spa-card__media">
             <figure class="spa-card__photo spa-card__photo--wide">
-              <img src="images/spa-day.png" alt="Сибирский чан и баня во дворе днём" loading="lazy" />
+              <img src="images/spa-day.png" alt="Сибирский чан и баня во дворе днём" loading="lazy" decoding="async" />
               <figcaption>День · чан и баня</figcaption>
             </figure>
             <figure class="spa-card__photo spa-card__photo--tall spa-card__photo--night">
-              <img src="images/spa-night.png" alt="Вид из чана на баню зимой вечером" loading="lazy" />
+              <img src="images/spa-night.png" alt="Вид из чана на баню зимой вечером" loading="lazy" decoding="async" />
               <figcaption>Вечер · пар и снег</figcaption>
             </figure>
             <figure class="spa-card__video">
-              <video autoplay muted loop playsinline preload="auto" poster="images/spa-day.png">
-                <source src="videos/spa.mp4" type="video/mp4" />
-              </video>
+              <video
+                id="spaVideo"
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster="images/spa-day.png"
+                data-src="videos/spa.mp4"
+              ></video>
               <span class="spa-card__video-label">Бассейн</span>
             </figure>
           </div>
@@ -498,7 +506,7 @@
               <iframe
                 title="Korschenruh на карте — посёлок Ладыгино"
                 src="https://yandex.ru/map-widget/v1/?ll=20.206021%2C54.606142&z=15&pt=20.206021,54.606142,pm2rdm&l=map"
-                loading="lazy"
+                loading="lazy" decoding="async"
                 allowfullscreen
               ></iframe>
             </div>

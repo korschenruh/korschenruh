@@ -10,18 +10,71 @@ document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
 
+function setNavOpen(open) {
+  if (!siteNav || !navToggle) return;
+  siteNav.classList.toggle("is-open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  document.body.classList.toggle("nav-open", open);
+  navToggle.textContent = open ? "Закрыть" : "Меню";
+}
+
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
-    const open = siteNav.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", String(open));
+    setNavOpen(!siteNav.classList.contains("is-open"));
   });
 
   siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      siteNav.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
+    link.addEventListener("click", () => setNavOpen(false));
   });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setNavOpen(false);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!siteNav.classList.contains("is-open")) return;
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+    if (siteNav.contains(target) || navToggle.contains(target)) return;
+    setNavOpen(false);
+  });
+}
+
+const spaVideo = document.getElementById("spaVideo");
+if (spaVideo) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const loadVideo = () => {
+    if (spaVideo.dataset.loaded === "1") return;
+    const src = spaVideo.getAttribute("data-src");
+    if (!src) return;
+    const source = document.createElement("source");
+    source.src = src;
+    source.type = "video/mp4";
+    spaVideo.appendChild(source);
+    spaVideo.load();
+    spaVideo.dataset.loaded = "1";
+  };
+
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadVideo();
+            spaVideo.play().catch(() => {});
+          } else if (!spaVideo.paused) {
+            spaVideo.pause();
+          }
+        });
+      },
+      { rootMargin: "120px 0px", threshold: 0.15 }
+    );
+    observer.observe(spaVideo);
+  } else if (!reduceMotion) {
+    loadVideo();
+    spaVideo.setAttribute("autoplay", "");
+    spaVideo.play().catch(() => {});
+  }
 }
 
 const tabRoot = document.querySelector("[data-tabs]");
