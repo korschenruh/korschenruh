@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="description" content="Korschenruh — усадьба у залива: два дома, баня на дровах, сибирский банный чан и тёплый бассейн." />
+  <link rel="canonical" href="https://korschenruh.ru/" />
+  <title>Korschenruh — усадьба с баней и чаном у залива</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-cream">
+  <div class="page-cream" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-header" id="top">
+    <div class="shell header__inner">
+      <a class="brand" href="#top" aria-label="Korschenruh — на главную">
+        <span class="brand__mark" aria-hidden="true">
+          <svg class="brand__sprig" viewBox="0 0 40 48" width="38" height="46" role="presentation" focusable="false">
+            <path d="M20 44c-1.5 0-2.5-.8-2.5-2s1-2 2.5-2 2.5.8 2.5 2-1 2-2.5 2z" fill="#6b5344" />
+            <path d="M19 42h2v-4h-2v4z" fill="#6b5344" />
+            <path d="M20 6 5 24h10l-4 8h4L20 10l5 22h4l-4-8h10L20 6z" fill="#3d5c48" />
+            <path d="M20 12 11 26h6l-2.5 5.5h3L20 18l2.5 13.5h3L23 26h6L20 12z" fill="#4d6e58" opacity=".9" />
+            <path d="M20 20 15 30h4l-1.5 4H20l-1.5-4h4L20 20z" fill="#6a8f72" opacity=".75" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Korschenruh</strong>
+          <span>усадьба у залива</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        Меню
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Основное">
+        <a href="#houses">Дома</a>
+        <a href="#spa">Баня и чан</a>
+        <a href="#events">Праздники</a>
+        <a href="#kitchen">Кухня</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79052434010" aria-label="Позвонить +7 905 243-40-10">+7 905 243-40-10</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" role="presentation"></div>
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">16 км от города · 200 м до пляжа</p>
+          <h1 id="hero-title">Korschenruh</h1>
+          <p class="hero__name-ru">(Коршенру)</p>
+          <div class="lead lead--story">
+            <p>Сначала — жар парилки. Пар обнимает тело, запах хвои и смолы.</p>
+            <p>Потом — сибирский банный чан. Горячая вода под открытым небом, снег или звёзды над головой.</p>
+            <p>Далее — тёплый бассейн.</p>
+            <p>И наконец вкусная еда, которую мы вам приготовим с любовью, и бокал вина возле потрескивающего камина.</p>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#calc">Рассчитать отдых</a>
+            <a class="btn btn--ghost" href="tel:+79052434010" aria-label="Позвонить +7 905 243-40-10">Позвонить</a>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <div class="hero__frame">
+            <img
+              src="images/hero-house.png"
+              alt="Korschenruh — кирпичный дом с красной крышей, цветущие кусты и ворота с совой"
+              width="900"
+              height="900"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </figure>
+      </div>
+      <ul class="hero-stats shell" aria-label="Ключевые факты">
+        <li><strong>16 км</strong><span>от Калининграда</span></li>
+        <li><strong>200 м</strong><span>до пляжа</span></li>
+        <li><strong>до 32</strong><span>гостей</span></li>
+        <li><strong>2 бани</strong><span>чан и бассейн</span></li>
+      </ul>
+    </section>
+
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="about-frame">
+          <header class="about-quote">
+            <p class="about-kicker">О месте</p>
+            <h2 id="about-title">Спокойствие — не праздник, что случается редко, а <em>шёпот</em>, которым душа говорит с собой каждый день.</h2>
+            <p class="about-quote__lead">Сюда приезжают выключить уведомления, слушать камин и быть с близкими без городского шума.</p>
+          </header>
+          <div class="about-features">
+            <article class="about-feature">
+              <h3>Уединение</h3>
+              <p>При двух помещениях ставим ограждение — гости не пересекаются.</p>
+            </article>
+            <article class="about-feature">
+              <h3>Природа</h3>
+              <p>Ели, тропинки и залив с белым песком в паре минут пешком.</p>
+            </article>
+            <article class="about-feature">
+              <h3>Релакс</h3>
+              <p>Баня, чан под небом, хвоя и цитрус — вечер, который помнишь телом.</p>
+            </article>
+            <article class="about-feature">
+              <h3>Вместимость</h3>
+              <p>Только ваши люди — до тридцати двух человек, без чужих за стеной.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--houses" id="houses" aria-labelledby="houses-title">
+      <div class="shell">
+        <header class="houses-head">
+          <p class="houses-kicker">Размещение</p>
+          <h2 id="houses-title">Два дома — два характера</h2>
+          <p>Арендуйте один дом или всю усадьбу целиком.</p>
+        </header>
+        <div class="house-grid">
+          <article class="house-card">
+            <div class="house-card__media">
+              <span class="house-card__badge">до 24 гостей</span>
+              <img src="images/big-house-1.png" alt="Большой дом с камином — фасад с красной крышей за воротами" loading="lazy" />
+            </div>
+            <div class="house-card__body">
+              <h3>Большой дом с камином</h3>
+              <p class="house-card__lead">Кирпич, зал для банкета, четыре комнаты, двор с беседкой и чаном у крыльца.</p>
+              <ul class="house-card__list">
+                <li>4 комнаты, кухня, 2 санузла</li>
+                <li>Камин и зал для застолья</li>
+                <li>Баня, беседка до 24 чел.</li>
+              </ul>
+              <div class="house-card__footer">
+                <p class="price-tag">от 20 000 ₽ / сутки<br /><span>8 гостей, +500 ₽ за каждого доп. гостя</span></p>
+                <a class="btn btn--secondary" href="#calc">Выбрать дом</a>
+              </div>
+            </div>
+          </article>
+          <article class="house-card">
+            <div class="house-card__media">
+              <span class="house-card__badge house-card__badge--alt">до 8 гостей</span>
+              <img src="images/forest-house-1.png" alt="Лесной дом с баней — гостиная с диванами и камином" loading="lazy" />
+            </div>
+            <div class="house-card__body">
+              <h3>Лесной дом с баней</h3>
+              <p class="house-card__lead">Мансарда, печь и парилка внутри — для пары, семьи или небольшой компании.</p>
+              <ul class="house-card__list">
+                <li>Отдельный вход и двор</li>
+                <li>Баня в доме, кухня</li>
+                <li>Бассейн и зона гриля</li>
+              </ul>
+              <div class="house-card__footer">
+                <p class="price-tag">от 15 000 ₽ / сутки<br /><span>до 8 гостей</span></p>
+                <a class="btn btn--secondary" href="#calc">Выбрать дом</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--spa" id="spa" aria-labelledby="spa-title">
+      <div class="spa-ambiance" aria-hidden="true"></div>
+      <div class="shell">
+        <article class="spa-card">
+          <div class="spa-card__intro">
+            <p class="spa-card__kicker">На территории усадьбы</p>
+            <h2 id="spa-title">Баня и чан</h2>
+            <p class="spa-card__lead">
+              Днём — чан у деревянной бани под соснами. Вечером — пар, снег на крыше и гирлянды.
+              Баня на дровах и сибирский банный чан бронируются отдельно на вечер.
+            </p>
+            <ul class="spa-card__prices">
+              <li>
+                <span class="spa-card__price-name">Баня</span>
+                <span class="spa-card__price-value">4 000 ₽ · в лесном доме 5 000 ₽</span>
+              </li>
+              <li>
+                <span class="spa-card__price-name">Чан</span>
+                <span class="spa-card__price-value">7 000 ₽ · наполнение +1 000 ₽</span>
+              </li>
+            </ul>
+            <a class="btn btn--primary" href="#calc">Добавить к расчёту</a>
+          </div>
+
+          <div class="spa-card__media">
+            <figure class="spa-card__photo spa-card__photo--wide">
+              <img src="images/spa-day.png" alt="Сибирский чан и баня во дворе днём" loading="lazy" />
+              <figcaption>День · чан и баня</figcaption>
+            </figure>
+            <figure class="spa-card__photo spa-card__photo--tall spa-card__photo--night">
+              <img src="images/spa-night.png" alt="Вид из чана на баню зимой вечером" loading="lazy" />
+              <figcaption>Вечер · пар и снег</figcaption>
+            </figure>
+            <figure class="spa-card__video">
+              <video autoplay muted loop playsinline preload="auto" poster="images/spa-day.png">
+                <source src="videos/spa.mp4" type="video/mp4" />
+              </video>
+              <span class="spa-card__video-label">Бассейн</span>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="events" aria-labelledby="events-title">
+      <div class="shell">
+        <header class="section__head section__head--center">
+          <h2 id="events-title">Свадьба, юбилей, корпоратив</h2>
+          <p>Берём на себя стол, сервировку и оформление — вы зовёте близких и празднуете без суеты.</p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section section--kitchen" id="kitchen" aria-labelledby="kitchen-title">
+      <div class="shell">
+        <div class="kitchen-board">
+          <div class="kitchen-board__intro">
+            <p class="kitchen-kicker">Меню усадьбы</p>
+            <h2 id="kitchen-title">Своя кухня</h2>
+            <p class="kitchen-board__lead">Меню под бюджет: от закусок до плова в казане на дровах.</p>
+            <a class="btn btn--primary" href="files/menu.pdf" download="Korschenruh-menu.pdf" target="_blank" rel="noopener">Скачать меню PDF</a>
+            <p class="kitchen-board__hint">Полное меню — в PDF. Состав и порции подбираем под событие и бюджет.</p>
+          </div>
+          <div class="kitchen-board__menu" role="list">
+            <article class="kitchen-dish" role="listitem">
+              <div class="kitchen-dish__row">
+                <h3>Закуски</h3>
+                <span class="kitchen-dish__price">от 750 ₽</span>
+              </div>
+              <p>Рулеты, медальоны с форелью, гренки.</p>
+            </article>
+            <article class="kitchen-dish" role="listitem">
+              <div class="kitchen-dish__row">
+                <h3>Брускетты</h3>
+                <span class="kitchen-dish__price">от 550 ₽</span>
+              </div>
+              <p>Итальянская, с форелью, креветками, авокадо — 5 шт.</p>
+            </article>
+            <article class="kitchen-dish" role="listitem">
+              <div class="kitchen-dish__row">
+                <h3>Горячее</h3>
+                <span class="kitchen-dish__price">на компанию</span>
+              </div>
+              <p>Шашлыки, плов, блюда в горшочках.</p>
+            </article>
+            <article class="kitchen-dish" role="listitem">
+              <div class="kitchen-dish__row">
+                <h3>Десерты и напитки</h3>
+                <span class="kitchen-dish__price">по меню</span>
+              </div>
+              <p>Торты, чизкейки, домашний квас и авторский чай.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--prices" id="prices" aria-labelledby="prices-title">
+      <div class="shell">
+        <header class="prices-head">
+          <p class="prices-kicker">Тарифы</p>
+          <h2 id="prices-title">Услуги и цены</h2>
+          <p>Соберите свой набор услуг — справа калькулятор посчитает сумму.</p>
+        </header>
+        <div class="prices-layout">
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <caption class="sr-only">Основные тарифы</caption>
+            <thead>
+              <tr><th scope="col">Услуга</th><th scope="col">Стоимость</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Большой дом, 8 гостей</td><td>20 000 ₽</td></tr>
+              <tr><td>Каждый доп. гость (до 24)</td><td>500 ₽</td></tr>
+              <tr><td>Лесной дом</td><td>15 000 ₽</td></tr>
+              <tr><td>Баня во дворе</td><td>4 000 ₽</td></tr>
+              <tr><td>Баня в лесном доме</td><td>5 000 ₽</td></tr>
+              <tr><td>Чан</td><td>7 000 ₽</td></tr>
+              <tr><td>Наполнение чана</td><td>1 000 ₽</td></tr>
+              <tr><td>Веник</td><td>500 ₽</td></tr>
+              <tr><td>Бассейн</td><td>3–4 тыс. ₽</td></tr>
+              <tr><td>Залог (возвратный)</td><td>10 000 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form class="calc" id="calc" aria-labelledby="calc-title">
+          <div class="calc__head">
+            <h3 id="calc-title">Соберите свой отдых</h3>
+            <p class="calc__hint">Отметьте только нужное — каждый пункт считается отдельно.</p>
+          </div>
+
+          <fieldset class="calc__group">
+            <legend>Дома</legend>
+            <label class="check">
+              <input type="checkbox" name="houseBig" id="calcHouseBig" checked />
+              <span class="check__text">Большой дом</span>
+              <span class="check__price">20 000 ₽</span>
+            </label>
+            <label class="calc__sub" id="calcGuestsWrap">
+              <span id="calcGuestsLabel">Гостей в большом доме</span>
+              <input type="number" name="guests" id="calcGuests" min="1" max="24" value="8" />
+            </label>
+            <label class="check">
+              <input type="checkbox" name="houseForest" id="calcHouseForest" />
+              <span class="check__text">Лесной дом</span>
+              <span class="check__price">15 000 ₽</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc__group">
+            <legend>Баня</legend>
+            <p class="calc__hint calc__hint--inline">Можно выбрать одну или обе сразу</p>
+            <label class="check">
+              <input type="checkbox" name="banyaYard" id="calcBanyaYard" />
+              <span class="check__text">Баня во дворе</span>
+              <span class="check__price">4 000 ₽</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="banyaForest" id="calcBanyaForest" />
+              <span class="check__text">Баня в лесном доме</span>
+              <span class="check__price">5 000 ₽</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc__group">
+            <legend>Чан и доп.</legend>
+            <label class="check">
+              <input type="checkbox" name="chan" id="calcChan" />
+              <span class="check__text">Сибирский банный чан</span>
+              <span class="check__price">7 000 ₽</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="fill" id="calcFill" />
+              <span class="check__text">Наполнение чана</span>
+              <span class="check__price">1 000 ₽</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="venik" id="calcVenik" />
+              <span class="check__text">Веник</span>
+              <span class="check__price">500 ₽</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc__group calc__group--source">
+            <legend>Откуда узнали о нас</legend>
+            <label class="calc__field">
+              Выберите вариант
+              <select name="source" id="calcSource">
+                <option value="">— не указано —</option>
+                <option value="avito">Авито</option>
+                <option value="friends">От друзей / знакомых</option>
+                <option value="instagram">Instagram</option>
+                <option value="telegram">Telegram</option>
+                <option value="yandex">Яндекс / поиск</option>
+                <option value="vk">ВКонтакте</option>
+                <option value="repeat">Уже были у нас</option>
+                <option value="other">Другое</option>
+              </select>
+            </label>
+            <label class="calc__field">
+              Или напишите сами
+              <textarea name="sourceText" id="calcSourceText" rows="2" placeholder="Например: посоветовали коллеги, увидели на карте…"></textarea>
+            </label>
+          </fieldset>
+
+          <div class="calc__summary">
+            <p class="calc__summary-label">Ваш заказ</p>
+            <ul class="calc__breakdown" id="calcBreakdown" aria-live="polite"></ul>
+            <p class="calc__result" id="calcResult">≈ 20 000 ₽</p>
+            <a class="btn btn--primary calc__order" href="https://t.me/MANAGER_LuDoMaN" target="_blank" rel="noopener">Заказать</a>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--reviews" aria-labelledby="reviews-title">
+      <div class="reviews-shell shell">
+        <div class="reviews-frame">
+          <header class="reviews-frame__head">
+            <p class="reviews-kicker">Отзывы гостей</p>
+            <h2 id="reviews-title">Гости возвращаются</h2>
+            <p>Реальные впечатления после проживания в усадьбе.</p>
+          </header>
+          <div class="reviews">
+            <article class="review-card">
+              <span class="review-card__quote" aria-hidden="true">“</span>
+              <header class="review-card__head">
+                <span class="review-card__avatar" aria-hidden="true">А</span>
+                <div>
+                  <strong class="review-card__name">Александра</strong>
+                  <time class="review-card__date" datetime="2025-09-10">10 сентября</time>
+                </div>
+              </header>
+              <div class="review-card__meta">
+                <span class="review-card__stars" aria-label="5 из 5">★★★★★</span>
+                <span class="review-card__badge">Проживание состоялось</span>
+              </div>
+              <div class="review-card__body">
+                <p>Отмечали второй день свадьбы.</p>
+                <p>Очень понравился дом, все чисто, просторные комнаты, большая территория. На кухне есть все, что нужно. Очень уютная комната с камином. И чан просто восторг!</p>
+                <p>Хозяйки приветливые, понимающие.</p>
+                <p>Мы остались всем довольные. Рекомендуем этот дом!</p>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <span class="review-card__quote" aria-hidden="true">“</span>
+              <header class="review-card__head">
+                <span class="review-card__avatar review-card__avatar--alt" aria-hidden="true">В</span>
+                <div>
+                  <strong class="review-card__name">Валерия</strong>
+                  <time class="review-card__date" datetime="2025-07-19">19 июля</time>
+                </div>
+              </header>
+              <div class="review-card__meta">
+                <span class="review-card__stars" aria-label="5 из 5">★★★★★</span>
+                <span class="review-card__badge">Проживание состоялось</span>
+              </div>
+              <div class="review-card__body">
+                <p>Праздновали свадьбу в доме и все остались в восторге! Безумно добрые, отзывчивые и общительные хозяйки дома. Очень красиво украсили территорию и оформили столы. Очень вкусно всех накормили.</p>
+                <p>В доме было всё необходимое: столовые приборы, посуда, постельное бельё, полотенца. Большая и уютная территория. Гости очень кайфанули от чана, баня и бассейн — супер.</p>
+                <p>Мы обязательно приедем ещё, потому что возвращаться в такой дом и к таким хозяйкам хочется неоднократно и с огромным удовольствием!</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--faq" aria-labelledby="faq-title">
+      <div class="shell">
+        <div class="faq-frame">
+          <header class="faq-frame__head">
+            <p class="faq-kicker">FAQ</p>
+            <h2 id="faq-title">Частые вопросы</h2>
+            <p>Коротко о главном перед бронированием.</p>
+          </header>
+          <div class="faq">
+            <details>
+              <summary>Где находится усадьба?</summary>
+              <p>Калининградская область, посёлок Ладыгино, дом 22, ~16 км от города, 200 м до пляжа на заливе.</p>
+            </details>
+            <details>
+              <summary>Сколько гостей можно разместить?</summary>
+              <p>До 32: большой дом — 24 чел. лесной — 8 чел. Можно снять один дом или всю усадьбу.</p>
+            </details>
+            <details>
+              <summary>Можно ли провести свадьбу?</summary>
+              <p>Да: банкеты, фуршеты, оформление. Условия — после просмотра территории.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="shell">
+        <div class="contacts-frame">
+          <div class="contact-cta">
+            <div class="contact-cta__copy">
+              <p class="contacts-kicker">Контакты</p>
+              <h2 id="contacts-title">Приезжайте за тишиной</h2>
+              <p class="contact-cta__place">Посёлок Ладыгино, 22 · Калининградская область</p>
+              <ul class="contact-phones">
+                <li><a href="tel:+79052434010" aria-label="Позвонить +7 905 243-40-10">+7 905 243-40-10</a></li>
+                <li><a href="tel:+79316131557" aria-label="Позвонить +7 931 613-15-57">+7 931 613-15-57</a></li>
+                <li><a href="tel:+79316124445" aria-label="Позвонить +7 931 612-44-45">+7 931 612-44-45</a></li>
+              </ul>
+            </div>
+            <a class="btn btn--primary btn--lg" href="https://t.me/MANAGER_LuDoMaN" target="_blank" rel="noopener">Написать в Telegram</a>
+          </div>
+
+          <div class="contact-map">
+            <div class="contact-map__head">
+              <div>
+                <p class="contacts-kicker contacts-kicker--soft">Маршрут</p>
+                <h3>Как нас найти</h3>
+              </div>
+              <a
+                class="btn btn--ghost contact-map__btn"
+                href="https://yandex.ru/maps/?ll=20.206021%2C54.606142&z=15&pt=20.206021,54.606142,pm2rdm"
+                target="_blank"
+                rel="noopener"
+              >Открыть в Яндекс Картах</a>
+            </div>
+            <div class="contact-map__frame">
+              <iframe
+                title="Korschenruh на карте — посёлок Ладыгино"
+                src="https://yandex.ru/map-widget/v1/?ll=20.206021%2C54.606142&z=15&pt=20.206021,54.606142,pm2rdm&l=map"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__grid">
+      <div>
+        <strong>Бережём лес</strong>
+        <ul>
+          <li>Без салютов</li>
+          <li>После 22:00 — тишина на улице</li>
+          <li>В доме праздник без ограничений</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Прокат</strong>
+        <ul>
+          <li>Велосипеды</li>
+          <li>Гитара, караоке</li>
+          <li>Металлоискатель</li>
+        </ul>
+      </div>
+      <p class="footer__copy">Korschenruh · © 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
