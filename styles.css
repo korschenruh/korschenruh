@@ -406,6 +406,50 @@ a {
   background: var(--cream-deep);
 }
 
+.section--events {
+  padding: 4rem 0;
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 0%, rgba(212, 165, 116, 0.18), transparent 55%),
+    var(--cream-deep);
+}
+
+.events-panel {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: calc(var(--radius) + 6px);
+  background: var(--cream-card);
+  border: 1px solid rgba(107, 83, 68, 0.1);
+  box-shadow: var(--shadow-soft);
+}
+
+.events-kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ember);
+}
+
+.events-panel h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  margin: 0 0 0.65rem;
+  font-weight: 400;
+  color: var(--pine-deep);
+}
+
+.events-panel > p {
+  margin: 0 0 1.35rem;
+  color: var(--text-muted);
+}
+
+.events-panel .btn {
+  min-width: 12rem;
+}
+
 /* About / Спокойствие */
 .section--about {
   position: relative;

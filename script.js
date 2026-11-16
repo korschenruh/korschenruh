@@ -268,3 +268,14 @@ calcForm?.addEventListener("input", updateCalc);
 calcForm?.addEventListener("change", updateCalc);
 
 updateCalc();
+
+const siteUpdated = document.getElementById("siteUpdated");
+if (siteUpdated) {
+  const stamp = new Date();
+  siteUpdated.textContent = `обновлено ${stamp.toLocaleString("ru-RU", {
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  })}`;
+}
