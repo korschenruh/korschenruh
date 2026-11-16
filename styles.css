@@ -249,13 +249,6 @@ a {
   padding: 3.5rem 0 1rem;
 }
 
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, var(--cream-deep) 0%, transparent 72%);
-  pointer-events: none;
-}
-
 .hero__grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
