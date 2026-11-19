@@ -9,7 +9,6 @@ document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
 
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
-const siteHeader = document.querySelector(".site-header");
 
 function setNavOpen(open) {
   if (!siteNav || !navToggle) return;
@@ -20,11 +19,20 @@ function setNavOpen(open) {
 }
 
 if (navToggle && siteNav) {
-  navToggle.addEventListener("click", (event) => {
+  let ignoreOutsideClickUntil = 0;
+
+  const toggleNav = (event) => {
     event.preventDefault();
     event.stopPropagation();
+    ignoreOutsideClickUntil = Date.now() + 400;
     setNavOpen(!siteNav.classList.contains("is-open"));
-  });
+  };
+
+  navToggle.addEventListener("click", toggleNav);
+  navToggle.addEventListener("touchend", (event) => {
+    event.preventDefault();
+    toggleNav(event);
+  }, { passive: false });
 
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => setNavOpen(false));
@@ -36,10 +44,10 @@ if (navToggle && siteNav) {
 
   document.addEventListener("click", (event) => {
     if (!siteNav.classList.contains("is-open")) return;
+    if (Date.now() < ignoreOutsideClickUntil) return;
     const target = event.target;
     if (!(target instanceof Node)) return;
     if (siteNav.contains(target) || navToggle.contains(target)) return;
-    if (siteHeader && siteHeader.contains(target) && target === navToggle) return;
     setNavOpen(false);
   });
 }
