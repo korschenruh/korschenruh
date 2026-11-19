@@ -122,7 +122,7 @@ const resultEl = document.getElementById("calcResult");
 const breakdownEl = document.getElementById("calcBreakdown");
 const calcForm = document.getElementById("calc");
 const orderBtn = document.querySelector(".calc__order");
-const TELEGRAM_ORDER = "MANAGER_LuDoMaN";
+const TELEGRAM_ORDER = "Korschenruh_bot";
 
 let lastOrder = { lines: [], total: 0 };
 
