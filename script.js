@@ -9,6 +9,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
 
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
+const siteHeader = document.querySelector(".site-header");
 
 function setNavOpen(open) {
   if (!siteNav || !navToggle) return;
@@ -19,7 +20,9 @@ function setNavOpen(open) {
 }
 
 if (navToggle && siteNav) {
-  navToggle.addEventListener("click", () => {
+  navToggle.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     setNavOpen(!siteNav.classList.contains("is-open"));
   });
 
@@ -36,6 +39,7 @@ if (navToggle && siteNav) {
     const target = event.target;
     if (!(target instanceof Node)) return;
     if (siteNav.contains(target) || navToggle.contains(target)) return;
+    if (siteHeader && siteHeader.contains(target) && target === navToggle) return;
     setNavOpen(false);
   });
 }
